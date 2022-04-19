@@ -1,0 +1,124 @@
+@import '../../variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  border-radius: 1em;
+  padding: 1em;
+  height: auto;
+  margin: auto;
+  max-width: 90%;
+
+  @media (min-width: 375px) {
+    & {
+      max-width: 337px;
+    }
+  }
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    color: var(--white);
+  }
+
+  p {
+    color: var(--light-grey);
+    margin-top: 0;
+    padding: 0;
+
+    &.thankpar {
+      text-align: center;
+    }
+  }
+}
+
+.starwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--medium-grey);
+  height: 40px;
+  width: 40px;
+}
+
+.thankwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--light-grey);
+  background-color: var(--medium-grey);
+  height: 45px;
+  width: 45px;
+  user-select: none;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+  }
+  &.active {
+    color: var(--white);
+    background-color: var(--light-grey);
+    &:hover {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}
+
+.markswrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.submitBtn {
+  background-color: var(--primary);
+  color: var(--white);
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 2em;
+  font-weight: bold;
+  padding: 1em 0;
+  margin: 1em 0;
+  letter-spacing: 2px;
+  &:disabled {
+    cursor: default;
+    background-color: var(--primary-disabled);
+    &:disabled:hover {
+      cursor: default;
+      background-color: var(--primary-disabled);
+      color: var(--white);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary);
+    background-color: var(--white);
+  }
+}
+
+.selected-rank {
+  background-color: var(--medium-grey);
+  color: var(--primary);
+  padding: 0.5em 1em;
+  width: fit-content;
+  border-radius: 2em;
+}
