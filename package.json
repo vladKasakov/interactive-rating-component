@@ -1,7 +1,7 @@
 {
   "name": "interactive-rating-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://vladkasakov.github.io/interactive-rating-component",
   "dependencies": {
     "@types/node": "^16.7.13",
